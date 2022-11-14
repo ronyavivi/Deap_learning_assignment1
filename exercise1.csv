@@ -1,0 +1,4 @@
+,model,Score (RMSE),Hyperparams used,Features dropped,New features created,Runtime trainining + inference (seconds),Hardware used (GPU/CPU/TPU),Explainability (top 3 features)
+0,Random forest,48.486791,"['n_estimators=200', 'random_state=42']","['atemp', 'datetime']","['year', 'month', 'day', 'dayofweek', 'hour', 'its_getting_hot_in_here']",42.1,GPU,"['its_getting_hot_in_here', 'hour', 'year']"
+1,Decision tree,71.944826,"['max_features=auto', 'random_state=42']","['atemp', 'datetime']","['year', 'month', 'day', 'dayofweek', 'hour', 'its_getting_hot_in_here']",0.47,GPU,"['its_getting_hot_in_here', 'hour', 'year']"
+2,Linear regression,121.985975,['None'],"['atemp', 'datetime']","['year', 'month', 'day', 'dayofweek', 'hour', 'its_getting_hot_in_here']",0.05,GPU,"['its_getting_hot_in_here', 'pollution', 'hour']"
